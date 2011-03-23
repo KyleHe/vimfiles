@@ -26,10 +26,8 @@ map <Up> gk
 map <D-k> gk
 imap <D-k> <Up>
 imap <C-CR> <Esc>$a<CR>
-imap <D-;> <Esc>a => 
+iabbrev v =>
 imap <D-i> <Esc>a => 
-imap <D-p> <Esc>aparams[:id]<Left><Left><Esc>
-imap <C-o> <tab>
 "========================================================
 " 设置F2 F3 F4为保存
 map <F2> :w<CR>
@@ -43,7 +41,6 @@ imap <F4> <Esc><F4>
 map <C-s> :w<CR>
 imap <C-s> <Esc><C-s>
 map <C-a> gg=G
-imap <C-a> <Esc><C-a>
 "========================================================
 "设置C加hjkl及左下上右的窗口移动
 map <C-h> <C-W>h
@@ -72,10 +69,10 @@ map <D-0> <C-W>=
 imap <D-0> <Esc><D-0>
 "========================================================
 "设置视图和插入模式中C-u为Esc
-imap <C-u> <Esc>
-vmap <C-u> <Esc>
-imap <D-u> <Esc>
-vmap <D-u> <Esc>
+"imap <C-u> <Esc>
+"vmap <C-u> <Esc>
+"imap <D-u> <Esc>
+"vmap <D-u> <Esc>
 "========================================================
 "tab设置
 map <D-t> :tabnew<CR>
