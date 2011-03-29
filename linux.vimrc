@@ -33,18 +33,14 @@ map <A-k> gk
 imap <A-k> <Up>
 imap <A-l> <Right>
 imap <A-h> <Left>
-map <A-l> :nohls<CR>
-imap <A-o> <Esc>o
-imap <C-CR> <Esc>o
-imap <A-;> <Esc>a =>
+map <A-l> :nohl<CR>
+imap <C-CR> <Esc>$a<CR>
+iabbrev v =>
 imap <A-i> <Esc>a =>
-imap <A-p> <Esc>aparams[:id]<Left><Left><Esc>
 map <A-[> <<
 map <A-]> >>
 vmap <A-[> <gv
 vmap <A-]> >gv
-imap <A-[> <Esc><<$a
-imap <A-]> <Esc>>>$a
 imap <C-o> <tab>
 " =======================================================
 " 设置F2 F3 F4为保存
@@ -67,7 +63,6 @@ imap <C-s> <Esc><C-s>
 map <A-w> :q<CR>
 imap <A-w> <Esc><A-w>
 map <C-a> ggVG
-imap <C-a> <Esc><C-a>
 map <A-a> gg=G
 imap <A-a> <Esc><A-a>
 map <C-x> "+d
@@ -104,8 +99,6 @@ map <A-0> <C-W>=
 imap <A-0> <Esc><A-0>
 "========================================================
 "设置视图和插入模式中C-u为Esc
-imap <C-u> <Esc>
-vmap <C-u> <Esc>
 imap <A-u> <Esc>
 vmap <A-u> <Esc>
 "========================================================
@@ -193,12 +186,17 @@ let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 "========================================================
 "AutoClose设置(http://www.vim.org/scripts/script.php?script_id=2009)
-let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '<': '>', '%': '%'}
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'"}
 "========================================================
 "yaml设置
 au BufNewFile,BufRead *.yaml,*.yml    setf yaml
 "========================================================
 "surround设置
-let g:surround_45 = "<% \r -%>"
-let g:surround_61 = "<%= \r %>"
+autocmd FileType eruby let b:surround_45 = "<% \r -%>"
+autocmd FileType eruby let b:surround_61 = "<%= \r %>"
+autocmd FileType haml let b:surround_35 = "#\r"
+autocmd FileType haml let b:surround_37 = "%\r"
+autocmd FileType haml let b:surround_45 = "-\r"
+autocmd FileType haml let b:surround_46 = ".\r"
+autocmd FileType haml let b:surround_61 = "=\r"
 "========================================================
