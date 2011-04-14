@@ -9,9 +9,11 @@ syntax enable
 syntax on
 set cursorline
 set incsearch
+set ignorecase smartcase
 set ruler
 set showcmd
 set scrolloff=3
+set tags=~/.tags
 "========================================================
 "设置tab补全
 let g:SuperTabRetaincompletionType=2
