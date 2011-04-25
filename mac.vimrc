@@ -13,7 +13,9 @@ set ignorecase smartcase
 set ruler
 set showcmd
 set scrolloff=3
-set tags=~/.tags
+set tags=~/.tags/ruby
+set tags=~/.tags/gem
+set tags=~/.tags/qb
 "========================================================
 " 设置tab补全
 let g:SuperTabRetaincompletionType=2
