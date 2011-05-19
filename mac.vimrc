@@ -11,6 +11,7 @@ set cursorline
 set incsearch
 set ignorecase smartcase
 set ruler
+set nocp
 set showcmd
 set scrolloff=3
 set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
@@ -73,8 +74,14 @@ imap <D-0> <Esc><D-0>
 "设置视图和插入模式中C-u为Esc
 "imap <C-u> <Esc>
 "vmap <C-u> <Esc>
-"imap <D-u> <Esc>
-"vmap <D-u> <Esc>
+imap <D-u> <Esc>
+vmap <D-u> <Esc>
+"========================================================
+"rails.vim设置
+map <D-r> :R<CR>
+map <C-c> :Rcontroller 
+map <C-v> :Rview 
+map <C-x> :Rmodel 
 "========================================================
 "tab设置
 map <D-t> :tabnew<CR>
@@ -114,7 +121,8 @@ set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set smartindent
 "========================================================
-set clipboard+=unnamed  " 剪贴板与无名寄存器同步
+" 剪贴板与无名寄存器同步
+set clipboard+=unnamed
 "没有备份
 set nobackup
 "没有swap文件
