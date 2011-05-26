@@ -1,7 +1,7 @@
 "========================================================
 "write 'source ~/.vim/mac.vimrc' in ~/.vimrc
 "设置配色方案
-colorscheme desert
+colorscheme tango
 "========================================================
 "设置高亮
 set hlsearch
