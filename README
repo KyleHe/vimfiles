@@ -7,3 +7,4 @@ write 'source ~/.vim/mac.vimrc' in ~/.vimrc
 In Linux
 write 'source ~/.vim/linux.gvimrc' in ~/.gvimrc
 write 'source ~/.vim/linux.vimrc' in ~/.vimrc
+
