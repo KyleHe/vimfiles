@@ -16,6 +16,9 @@ set showcmd
 set scrolloff=3
 set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
 "========================================================
+map <leader>ss :source ~/.vimrc<CR>
+map <leader>ee :edit ~/.vim/mac.vimrc<CR>
+"========================================================
 " 设置tab补全
 let g:SuperTabRetaincompletionType=2
 "========================================================
