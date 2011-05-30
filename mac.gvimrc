@@ -2,7 +2,7 @@
 "write 'source ~/.vim/mac.gvimrc' in ~/.gvimrc
 "MacVim
 if has("gui_macvim")
-  colorscheme my
+  colorscheme molokai
   set guifont=my:h12
   "======================================================
   "启动gvim时窗口的大小

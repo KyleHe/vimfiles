@@ -1,7 +1,8 @@
 "========================================================
 "write 'source ~/.vim/linux.vimrc' in ~/.vimrc
 "设置配色方案
-colorscheme tango
+colorscheme molokai
+let g:molokai_original = 1
 "========================================================
 "设置高亮
 set hlsearch

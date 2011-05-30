@@ -1,7 +1,7 @@
 "========================================================
 "write 'source ~/.vim/linux.gvimrc' in ~/.gvimrc
 "设置配色方案
-colorscheme my
+colorscheme molokai
 "========================================================
 "设置隐藏菜单栏与工具栏
 set guioptions-=m
