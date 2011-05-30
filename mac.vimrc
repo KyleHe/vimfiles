@@ -20,9 +20,6 @@ set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
 map <leader>ss :source ~/.vimrc<CR>
 map <leader>ee :edit ~/.vim/mac.vimrc<CR>
 "========================================================
-" 设置tab补全
-let g:SuperTabRetaincompletionType=2
-"========================================================
 " Set the key map
 "========================================================
 "try to make possible to navigate within lines of wrapped lines
