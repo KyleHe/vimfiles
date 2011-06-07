@@ -26,7 +26,7 @@ map <A-z> u
 imap <A-z> <Esc>ua
 map <A-Z> <C-r>
 imap <A-Z> <Esc><C-r>a
-" =======================================================
+"========================================================
 "try to make possible to navigate within lines of wrapped lines
 map <Down> gj
 map <A-j> gj
@@ -44,7 +44,10 @@ map <A-[> <<
 map <A-]> >>
 vmap <A-[> <gv
 vmap <A-]> >gv
-imap <C-o> <tab>
+imap <C-f> <Right>
+imap <C-b> <Left>
+imap <C-n> <Down>
+imap <C-p> <Up>
 " =======================================================
 " 设置F2 F3 F4为保存
 map <F2> :w<CR>

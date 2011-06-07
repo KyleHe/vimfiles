@@ -32,6 +32,10 @@ imap <D-k> <Up>
 imap <C-CR> <Esc>$a<CR>
 iabbrev v =>
 imap <D-i> <Esc>a => 
+imap <C-f> <Right>
+imap <C-b> <Left>
+imap <C-n> <Down>
+imap <C-p> <Up>
 "========================================================
 " 设置F2 F3 F4为保存
 map <F2> :w<CR>
@@ -64,17 +68,7 @@ imap <C-Up> <Esc><C-Up>
 map <C-Down> <C-W>j
 imap <C-Down> <Esc><C-Down>
 "========================================================
-"设置D加-=更改窗口高度
-map <D-=> <C-W>+
-imap <D-=> <Esc><D-=>
-map <D--> <C-W>-
-imap <D--> <Esc><D-->
-map <D-0> <C-W>=
-imap <D-0> <Esc><D-0>
-"========================================================
 "设置视图和插入模式中C-u为Esc
-"imap <C-u> <Esc>
-"vmap <C-u> <Esc>
 imap <D-u> <Esc>
 vmap <D-u> <Esc>
 "========================================================
