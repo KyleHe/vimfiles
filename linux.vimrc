@@ -29,10 +29,11 @@ imap <A-Z> <Esc><C-r>a
 "========================================================
 "try to make possible to navigate within lines of wrapped lines
 map <Down> gj
-map <A-j> gj
+map j gj
 imap <A-j> <Down>
 map <Up> gk
-map <A-k> gk
+map k gk
+map K gk
 imap <A-k> <Up>
 imap <A-l> <Right>
 imap <A-h> <Left>

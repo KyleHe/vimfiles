@@ -25,9 +25,12 @@ map <leader>ee :edit ~/.vim/mac.vimrc<CR>
 "try to make possible to navigate within lines of wrapped lines
 map <Down> gj
 map <D-j> gj
+map <j> gj
 imap <D-j> <Down>
 map <Up> gk
 map <D-k> gk
+map <k> gk
+map <K> gk
 imap <D-k> <Up>
 imap <C-CR> <Esc>$a<CR>
 iabbrev v =>
