@@ -4,6 +4,7 @@
 colorscheme molokai
 let g:molokai_original = 1
 "========================================================
+map <leader>gf <C-w>f
 map <leader>ss :source ~/.vimrc<CR>
 map <leader>ee :edit ~/.vim/mac.vimrc<CR>
 "========================================================
