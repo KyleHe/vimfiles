@@ -12,9 +12,11 @@ set cursorline
 set incsearch
 set ignorecase smartcase
 set ruler
-set nocp
-set showcmd
+set showmode
 set scrolloff=3
+set mouse=a
+set ttymouse=xterm2
+set t_Co=256
 set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
 "========================================================
 map <leader>ss :source ~/.vimrc<CR>
@@ -140,9 +142,7 @@ filetype plugin on
 " 设置键盘模式为vim非vi
 set nocompatible
 set nu
-"========================================================
-" 设置自动补全
-set completeopt=longest,menu
+set showcmd
 "========================================================
 "FuzzyFinder设置
 map tf :FufFile<cr>
