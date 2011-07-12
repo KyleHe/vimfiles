@@ -210,5 +210,5 @@ autocmd FileType haml let b:surround_45 = "-\r"
 autocmd FileType haml let b:surround_46 = ".\r"
 autocmd FileType haml let b:surround_61 = "=\r"
 "========================================================
-au BufReadPost * if line("`\"") > 1 && line("`\"") <= line("$") | exe "normal! g`\"" | endif
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "========================================================
