@@ -4,21 +4,6 @@
 colorscheme molokai
 let g:molokai_original = 1
 "========================================================
-"设置高亮
-set hlsearch
-syntax enable
-syntax on
-set cursorline
-set incsearch
-set ignorecase smartcase
-set ruler
-set showmode
-set scrolloff=3
-set mouse=a
-set ttymouse=xterm2
-set t_Co=256
-set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
-"========================================================
 map <leader>ss :source ~/.vimrc<CR>
 map <leader>ee :edit ~/.vim/mac.vimrc<CR>
 "========================================================
@@ -141,8 +126,24 @@ filetype plugin on
 "========================================================
 " 设置键盘模式为vim非vi
 set nocompatible
+"========================================================
+"设置高亮
+set hlsearch
+syntax enable
+syntax on
+set cursorline
+set incsearch
+set ignorecase smartcase
+set ruler
 set nu
+set showmode
 set showcmd
+set scrolloff=3
+set mouse=a
+set ttymouse=xterm2
+set t_Co=256
+set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
+set whichwrap=b,s,<,>,[,],h,l,~
 "========================================================
 "FuzzyFinder设置
 map tf :FufFile<cr>
