@@ -149,9 +149,11 @@ set whichwrap=b,s,<,>,[,],h,l,~
 "FuzzyFinder设置
 map tf :FufFile<cr>
 map td :FufBuffer<cr>
+map <F1> :FufBuffer<cr>
 "========================================================
 "NERDTree设置
 map tt :NERDTree<cr>
+map <F2> :NERDTree<cr>
 "========================================================
 "syntastic设置
 let g:syntastic_enable_signs=1

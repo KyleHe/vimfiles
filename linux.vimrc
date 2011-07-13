@@ -40,8 +40,6 @@ imap <C-n> <Down>
 imap <C-p> <Up>
 " =======================================================
 " 设置F2 F3 F4为保存
-map <F2> :w<CR>
-imap <F2> <Esc><F2> 
 map <F3> :w<CR>
 imap <F3> <Esc><F3> 
 map <F4> :w<CR>
@@ -186,9 +184,11 @@ set whichwrap=b,s,<,>,[,],h,l,~
 "FuzzyFinder设置
 map tf :FufFile<cr>
 map td :FufBuffer<cr>
+map <F1> :FufBuffer<cr>
 "========================================================
 "NERDTree设置
 map tt :NERDTree<cr>
+map <F2> :NERDTree<cr>
 "========================================================
 "syntastic设置
 let g:syntastic_enable_signs=1
