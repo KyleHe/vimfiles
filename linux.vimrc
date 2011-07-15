@@ -139,6 +139,7 @@ set fencs=utf-8,gb18030,gbk,gb2312
 set encoding=utf-8
 set expandtab
 set autowrite
+set autoread
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set smartindent
