@@ -65,9 +65,9 @@ vmap <D-u> <Esc>
 "========================================================
 "rails.vim设置
 map <D-r> :R<CR>
-map <C-c> :Rcontroller 
-map <C-v> :Rview 
-map <C-x> :Rmodel 
+"map <C-c> :Rcontroller
+"map <C-v> :Rview
+"map <C-x> :Rmodel
 "========================================================
 "tab设置
 map <D-t> :tabnew<CR>
