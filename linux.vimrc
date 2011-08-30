@@ -1,6 +1,8 @@
 "========================================================
 "write 'source ~/.vim/linux.vimrc' in ~/.vimrc
 "设置配色方案
+syntax enable
+syntax on
 colorscheme molokai
 let g:molokai_original = 1
 "========================================================
@@ -164,10 +166,8 @@ filetype plugin on
 " 设置键盘模式为vim非vi
 set nocompatible
 "========================================================
-"设置高亮
+"其他设置
 set hlsearch
-syntax enable
-syntax on
 set cursorline
 set incsearch
 set ignorecase smartcase
@@ -181,6 +181,8 @@ set ttymouse=xterm2
 set t_Co=256
 set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
 set whichwrap=b,s,<,>,[,],h,l,~
+set laststatus=2
+set statusline=%F%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}%y\ [ASCII=\%03.3b]\[HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 "========================================================
 "FuzzyFinder设置
 map tf :FufFile<cr>
