@@ -182,7 +182,7 @@ set t_Co=256
 set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
 set whichwrap=b,s,<,>,[,],h,l,~
 set laststatus=2
-set statusline=%F%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}%y\ [ASCII=\%03.3b]\[HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+"set statusline=%F%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}%y\ [ASCII=\%03.3b]\[HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 "========================================================
 "FuzzyFinder设置
 map tf :FufFile<cr>
