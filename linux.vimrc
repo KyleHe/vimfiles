@@ -12,13 +12,8 @@ map <leader>ee :edit ~/.vim/linux.vimrc<CR>
 "========================================================
 " Set the key map
 "========================================================
-"定义撤销命令
-map <A-z> u
-imap <A-z> <Esc>ua
-map <A-Z> <C-r>
-imap <A-Z> <Esc><C-r>a
-"========================================================
 "try to make possible to navigate within lines of wrapped lines
+map <space> a <Esc>l
 map <Down> gj
 map j gj
 imap <A-j> <Down>
@@ -31,7 +26,6 @@ imap <A-h> <Left>
 map <A-l> :nohl<CR>
 imap <C-CR> <Esc>$a<CR>
 iabbrev v =>
-imap <A-i> <Esc>a =>
 map <A-[> <<
 map <A-]> >>
 vmap <A-[> <gv
