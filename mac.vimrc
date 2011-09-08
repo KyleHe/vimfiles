@@ -29,11 +29,13 @@ imap <C-f> <Right>
 imap <C-b> <Left>
 imap <C-n> <Down>
 imap <C-p> <Up>
+imap <C-a> <Esc>I
+imap <C-e> <Esc>A
 "========================================================
 "设置C-s保存A-a全选C-a重排C-c复制C-v粘贴
 map <C-s> :w<CR>
 imap <C-s> <Esc><C-s>
-map <C-a> gg=G
+"map <C-a> gg=G
 "========================================================
 "设置C加hjkl及左下上右的窗口移动
 map <C-h> <C-W>h

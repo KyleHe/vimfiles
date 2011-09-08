@@ -34,6 +34,8 @@ imap <C-f> <Right>
 imap <C-b> <Left>
 imap <C-n> <Down>
 imap <C-p> <Up>
+imap <C-a> <Esc>I
+imap <C-e> <Esc>A
 "========================================================
 "设置C-s保存A-a全选C-a重排C-c复制C-v粘贴
 map <A-s> :w<CR>
@@ -42,7 +44,7 @@ map <C-s> :w<CR>
 imap <C-s> <Esc><C-s>
 map <A-w> :q<CR>
 imap <A-w> <Esc><A-w>
-map <C-a> ggVG
+"map <C-a> ggVG
 map <A-a> gg=G
 imap <A-a> <Esc><A-a>
 map <C-x> "+d
