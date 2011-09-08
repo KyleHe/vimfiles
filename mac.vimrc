@@ -30,14 +30,6 @@ imap <C-b> <Left>
 imap <C-n> <Down>
 imap <C-p> <Up>
 "========================================================
-" 设置F2 F3 F4为保存
-map <F2> :w<CR>
-imap <F2> <Esc><F2>
-map <F3> :w<CR>
-imap <F3> <Esc><F3>
-map <F4> :w<CR>
-imap <F4> <Esc><F4>
-"========================================================
 "设置C-s保存A-a全选C-a重排C-c复制C-v粘贴
 map <C-s> :w<CR>
 imap <C-s> <Esc><C-s>
@@ -157,6 +149,15 @@ map <F1> :FufBuffer<cr>
 "NERDTree设置
 map tt :NERDTree<cr>
 map <F2> :NERDTree<cr>
+"========================================================
+" 设置F3 F4为保存
+map <F3> :w<CR>
+imap <F3> <Esc><F3>
+map <F4> :w<CR>
+imap <F4> <Esc><F4>
+"========================================================
+"设置<F5>为格式化
+map <F5> gg=G
 "========================================================
 "syntastic设置
 let g:syntastic_enable_signs=1
