@@ -13,7 +13,7 @@ map <leader>ee :edit ~/.vim/linux.vimrc<CR>
 " Set the key map
 "========================================================
 "try to make possible to navigate within lines of wrapped lines
-map <space> a <Esc>l
+map <space> i <Esc>l
 map <Down> gj
 map j gj
 imap <A-j> <Down>
