@@ -127,8 +127,9 @@ filetype plugin on
 set nocompatible
 "========================================================
 "其他设置
+let loaded_matchparen = 1 "似乎在Lion下显示括号匹配高亮会让移动变的很慢
+"set cursorline
 set hlsearch
-"set cursorline 似乎在Lion下显示行号会让移动变的很慢
 set incsearch
 set ignorecase smartcase
 set ruler
