@@ -1,5 +1,5 @@
 "========================================================
-"write 'source ~/.vim/mac.gvimrc' in ~/.gvimrc
+"run 'ln -s ~/.vim/mac.gvimrc ~/.gvimrc'
 "MacVim
 if has("gui_macvim")
   colorscheme molokai

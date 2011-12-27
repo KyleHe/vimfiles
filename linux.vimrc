@@ -1,5 +1,5 @@
 "========================================================
-"write 'source ~/.vim/linux.vimrc' in ~/.vimrc
+"run 'ln -s ~/.vim/linux.vimrc ~/.vimrc'
 "设置配色方案
 syntax enable
 syntax on

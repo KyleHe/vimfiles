@@ -1,5 +1,5 @@
 "========================================================
-"write 'source ~/.vim/linux.gvimrc' in ~/.gvimrc
+"run 'ln -s ~/.vim/linux.gvimrc ~/.gvimrc'
 "设置配色方案
 colorscheme molokai
 "========================================================
