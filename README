@@ -1,10 +1,7 @@
 This is my ~/.vim files
 
 In Mac OS
-write 'source ~/.vim/mac.gvimrc' in ~/.gvimrc
-write 'source ~/.vim/mac.vimrc' in ~/.vimrc
+run 'ln -s ~/.vim/mac.gvimrc ~/.gvimrc && ln -s ~/.vim/mac.vimrc ~/.vimrc'
 
 In Linux
-write 'source ~/.vim/linux.gvimrc' in ~/.gvimrc
-write 'source ~/.vim/linux.vimrc' in ~/.vimrc
-
+run 'ln -s ~/.vim/linux.gvimrc ~/.gvimrc && ln -s ~/.vim/linux.vimrc ~/.vimrc'
