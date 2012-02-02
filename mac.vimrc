@@ -25,7 +25,7 @@ map k gk
 map K gk
 imap <D-k> <Up>
 imap <C-CR> <Esc>A<CR>
-iabbrev v =>
+"iabbrev v => "Use TextExpander
 imap <C-f> <Right>
 imap <C-b> <Left>
 imap <C-n> <Down>
@@ -182,3 +182,11 @@ autocmd FileType haml let b:surround_61 = "=\r"
 "========================================================
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "========================================================
+if v:version > 702
+    "自动切换当前目录为当前文件所在的目录
+    set autochdir
+    "开启持久性撤销
+    set undofile
+    "指定持久性撤消的临时存放目录
+    set undodir=/Users/kyle/.vim/tmp/undofile
+endif
