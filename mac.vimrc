@@ -190,3 +190,8 @@ if v:version > 702
     "指定持久性撤消的临时存放目录
     set undodir=/Users/kyle/.vim/tmp/undofile
 endif
+"========================================================
+"使用语法高亮定义代码折叠
+set foldmethod=syntax
+"打开文件是默认不折叠代码
+set foldlevelstart=99
