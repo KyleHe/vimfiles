@@ -3,7 +3,7 @@
 "========================================================
 map <leader>gf <C-w>f
 map <leader>ss :source ~/.vimrc<CR>
-map <leader>ee :edit ~/.vim/mac.vimrc<CR>
+map <leader>ee :edit ~/.vimrc<CR>
 "========================================================
 " Set the key map
 "========================================================
