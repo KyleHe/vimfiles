@@ -1,6 +1,6 @@
 This is my ~/.vim files
 
-git clone git://github.com/KyleHe/vimfiles.git ~/.vim
+git clone https://github.com/KyleHe/vimfiles.git ~/.vim
 
 ln -s ~/.vim/gvimrc ~/.gvimrc && ln -s ~/.vim/vimrc ~/.vimrc
 
