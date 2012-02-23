@@ -55,40 +55,6 @@ imap <C-Up> <Esc><C-Up>
 map <C-Down> <C-W>j
 imap <C-Down> <Esc><C-Down>
 "========================================================
-"设置视图和插入模式中C-u为Esc
-imap <D-u> <Esc>
-vmap <D-u> <Esc>
-"========================================================
-"rails.vim设置
-map <D-r> :R<CR>
-"map <C-c> :Rcontroller
-"map <C-v> :Rview
-"map <C-x> :Rmodel
-"========================================================
-"tab设置
-map <D-t> :tabnew<CR>
-imap <D-t> <Esc>:tabnew<CR>
-map <D-1> 1gt
-imap <D-1> <Esc>1gt
-map <D-2> 2gt
-imap <D-2> <Esc>2gt
-map <D-3> 3gt
-imap <D-3> <Esc>3gt
-map <D-4> 4gt
-imap <D-4> <Esc>4gt
-map <D-5> 5gt
-imap <D-5> <Esc>5gt
-map <D-6> 6gt
-imap <D-6> <Esc>6gt
-map <D-7> 7gt
-imap <D-7> <Esc>7gt
-map <D-8> 8gt
-imap <D-8> <Esc>8gt
-map <D-9> 9gt
-imap <D-9> <Esc>9gt
-map <D-0> :tablast<CR>
-imap <D-0> <Esc>:tablast<CR>
-"========================================================
 " 设置vim目录和其他基本设置
 "========================================================
 "设置文件编码检测类型及支持格式
@@ -123,8 +89,8 @@ filetype plugin on
 set nocompatible
 "========================================================
 "其他设置
-"let loaded_matchparen = 1 似乎在Lion下显示括号匹配高亮会让移动变的很慢
-set cursorline
+let loaded_matchparen = 1 "似乎在Lion下显示括号匹配高亮会让移动变的很慢
+"set cursorline 似乎在Lion下显示光标所在行高亮会让移动变的很慢
 set hlsearch
 set incsearch
 set ignorecase smartcase
