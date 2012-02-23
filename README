@@ -1,7 +1,9 @@
 This is my ~/.vim files
 
-In Mac OS
-run 'ln -s ~/.vim/mac.gvimrc ~/.gvimrc && ln -s ~/.vim/mac.vimrc ~/.vimrc'
+git clone git://github.com/KyleHe/vimfiles.git ~/.vim
 
-In Linux
-run 'ln -s ~/.vim/linux.gvimrc ~/.gvimrc && ln -s ~/.vim/linux.vimrc ~/.vimrc'
+run 'ln -s ~/.vim/gvimrc ~/.gvimrc && ln -s ~/.vim/vimrc ~/.vimrc'
+
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+Launch vim, run :BundleInstall

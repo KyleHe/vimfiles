@@ -1,5 +1,5 @@
 "========================================================
-"run 'ln -s ~/.vim/mac.gvimrc ~/.gvimrc'
+"run 'ln -s ~/.vim/gvimrc ~/.gvimrc'
 "MacVim
 if has("gui_macvim")
   colorscheme molokai

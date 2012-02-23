@@ -1,5 +1,5 @@
 "========================================================
-"run 'ln -s ~/.vim/mac.vimrc ~/.vimrc'
+"run 'ln -s ~/.vim/vimrc ~/.vimrc'
 "========================================================
 map <leader>gf <C-w>f
 map <leader>ss :source ~/.vimrc<CR>
