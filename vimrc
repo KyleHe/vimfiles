@@ -1,10 +1,5 @@
 "========================================================
 "run 'ln -s ~/.vim/mac.vimrc ~/.vimrc'
-"设置配色方案
-syntax enable
-syntax on
-colorscheme molokai
-let g:molokai_original = 1
 "========================================================
 map <leader>gf <C-w>f
 map <leader>ss :source ~/.vimrc<CR>
@@ -33,10 +28,14 @@ imap <C-p> <Up>
 imap <C-a> <Esc>I
 imap <C-e> <Esc>A
 "========================================================
-"设置C-s保存A-a全选C-a重排C-c复制C-v粘贴
-map <C-s> :w<CR>
-imap <C-s> <Esc><C-s>
-"map <C-a> gg=G
+" 设置F3 F4为保存
+map <F3> :w<CR>
+imap <F3> <Esc><F3>
+map <F4> :w<CR>
+imap <F4> <Esc><F4>
+"========================================================
+"设置<F5>为格式化
+map <F5> gg=G
 "========================================================
 "设置C加hjkl及左下上右的窗口移动
 map <C-h> <C-W>h
@@ -116,7 +115,7 @@ set noerrorbells
 set visualbell t_vb=
 "========================================================
 " 设置文件类型
-filetype on
+filetype off
 filetype indent on
 filetype plugin on
 "========================================================
@@ -124,8 +123,8 @@ filetype plugin on
 set nocompatible
 "========================================================
 "其他设置
-let loaded_matchparen = 1 "似乎在Lion下显示括号匹配高亮会让移动变的很慢
-"set cursorline
+"let loaded_matchparen = 1 似乎在Lion下显示括号匹配高亮会让移动变的很慢
+set cursorline
 set hlsearch
 set incsearch
 set ignorecase smartcase
@@ -142,6 +141,45 @@ set whichwrap=b,s,<,>,[,],h,l,~
 set laststatus=2
 "set statusline=%F%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}%y\ [ASCII=\%03.3b]\[HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 "========================================================
+if v:version > 702
+    "自动切换当前目录为当前文件所在的目录
+    set autochdir
+    "开启持久性撤销
+    set undofile
+    "指定持久性撤消的临时存放目录
+    set undodir=/Users/kyle/.vim/tmp/undofile
+endif
+"========================================================
+"使用语法高亮定义代码折叠
+set foldmethod=syntax
+"打开文件是默认不折叠代码
+set foldlevelstart=99
+"========================================================
+"vundle设置
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'vim-scripts/The-NERD-Commenter'
+Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'vim-scripts/SudoEdit.vim'
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'vim-scripts/AutoComplPop'
+Bundle 'vim-scripts/IndexedSearch'
+Bundle 'vim-scripts/L9'
+Bundle 'vim-scripts/FuzzyFinder'
+Bundle 'Townk/vim-autoclose'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tomasr/molokai'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/syntastic'
+
+Bundle 'Align'
+"========================================================
 "FuzzyFinder设置
 map tf :FufFile<cr>
 map td :FufBuffer<cr>
@@ -151,22 +189,13 @@ map <F1> :FufBuffer<cr>
 map tt :NERDTree<cr>
 map <F2> :NERDTree<cr>
 "========================================================
-" 设置F3 F4为保存
-map <F3> :w<CR>
-imap <F3> <Esc><F3>
-map <F4> :w<CR>
-imap <F4> <Esc><F4>
-"========================================================
-"设置<F5>为格式化
-map <F5> gg=G
-"========================================================
 "syntastic设置
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 "========================================================
 "AutoClose设置(http://www.vim.org/scripts/script.php?script_id=2009)
-let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'"}
+"let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'"}
 "========================================================
 "yaml设置
 au BufNewFile,BufRead *.yaml,*.yml    setf yaml
@@ -182,16 +211,22 @@ autocmd FileType haml let b:surround_61 = "=\r"
 "========================================================
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "========================================================
-if v:version > 702
-    "自动切换当前目录为当前文件所在的目录
-    set autochdir
-    "开启持久性撤销
-    set undofile
-    "指定持久性撤消的临时存放目录
-    set undodir=/Users/kyle/.vim/tmp/undofile
-endif
+"设置配色方案
+syntax enable
+syntax on
+colorscheme molokai
+let g:molokai_original = 1
 "========================================================
-"使用语法高亮定义代码折叠
-set foldmethod=syntax
-"打开文件是默认不折叠代码
-set foldlevelstart=99
+" Strip trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+   " Preparation: save last search, and cursor position.
+   let _s=@/
+   let l = line(".")
+   let c = col(".")
+   " Do the business:
+   %s/\s\+$//e
+   " Clean up: restore previous search history, and cursor position
+   let @/=_s
+   call cursor(l, c)
+endfunction
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
