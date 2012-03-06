@@ -116,11 +116,6 @@ if v:version > 702
     set undodir=/Users/kyle/.vim/tmp/undofile
 endif
 "========================================================
-"使用语法高亮定义代码折叠
-set foldmethod=syntax
-"打开文件是默认不折叠代码
-set foldlevelstart=99
-"========================================================
 "vundle设置
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -134,7 +129,6 @@ Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/IndexedSearch'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/FuzzyFinder'
-Bundle 'Townk/vim-autoclose'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-rails'
@@ -145,6 +139,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/syntastic'
 
 Bundle 'Align'
+Bundle 'AutoClose--Alves'
 "========================================================
 "FuzzyFinder设置
 map tf :FufFile<cr>
@@ -161,7 +156,7 @@ let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 "========================================================
 "AutoClose设置(http://www.vim.org/scripts/script.php?script_id=2009)
-"let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'"}
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'"}
 "========================================================
 "yaml设置
 au BufNewFile,BufRead *.yaml,*.yml    setf yaml
