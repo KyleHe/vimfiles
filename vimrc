@@ -89,8 +89,8 @@ filetype plugin on
 set nocompatible
 "========================================================
 "其他设置
-let loaded_matchparen = 1 "似乎在Lion下显示括号匹配高亮会让移动变的很慢
-"set cursorline 似乎在Lion下显示光标所在行高亮会让移动变的很慢
+let loaded_matchparen = 1 "似乎在7.3下显示括号匹配高亮会让移动变的很慢
+"set cursorline 似乎在7.3下显示光标所在行高亮会让移动变的很慢
 set hlsearch
 set incsearch
 set ignorecase smartcase
@@ -105,7 +105,6 @@ set t_Co=256
 set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
 set whichwrap=b,s,<,>,[,],h,l,~
 set laststatus=2
-"set statusline=%F%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}%y\ [ASCII=\%03.3b]\[HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 "========================================================
 if v:version > 702
     "自动切换当前目录为当前文件所在的目录
@@ -135,12 +134,15 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tomasr/molokai'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'Lokaltog/vim-powerline'
 
 Bundle 'Align'
 Bundle 'AutoClose--Alves'
+
+"colorscheme
+Bundle 'tomasr/molokai'
 "========================================================
 "FuzzyFinder设置
 map tf :FufFile<cr>
