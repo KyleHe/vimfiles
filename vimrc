@@ -158,9 +158,6 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 "========================================================
-"AutoClose设置(http://www.vim.org/scripts/script.php?script_id=2009)
-let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'"}
-"========================================================
 "yaml设置
 au BufNewFile,BufRead *.yaml,*.yml    setf yaml
 "========================================================
