@@ -89,7 +89,6 @@ filetype plugin on
 set nocompatible
 "========================================================
 "其他设置
-"let loaded_matchparen = 1 "似乎在7.3下显示括号匹配高亮会让移动变的很慢
 set cursorline
 set hlsearch
 set incsearch
