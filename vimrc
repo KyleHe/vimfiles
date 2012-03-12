@@ -137,9 +137,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'Raimondi/delimitMate'
 
 Bundle 'Align'
-Bundle 'AutoClose--Alves'
 
 "colorscheme
 Bundle 'tomasr/molokai'
