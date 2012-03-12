@@ -89,8 +89,8 @@ filetype plugin on
 set nocompatible
 "========================================================
 "其他设置
-let loaded_matchparen = 1 "似乎在7.3下显示括号匹配高亮会让移动变的很慢
-"set cursorline 似乎在7.3下显示光标所在行高亮会让移动变的很慢
+"let loaded_matchparen = 1 "似乎在7.3下显示括号匹配高亮会让移动变的很慢
+set cursorline
 set hlsearch
 set incsearch
 set ignorecase smartcase
@@ -102,7 +102,7 @@ set scrolloff=3
 set mouse=a
 set ttymouse=xterm2
 set t_Co=256
-set tags=~/.tags/qb,~/.tags/gem,~/.tags/ruby
+set tags=~/.tags/gem,~/.tags/ruby
 set whichwrap=b,s,<,>,[,],h,l,~
 set laststatus=2
 "========================================================
