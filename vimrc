@@ -161,7 +161,7 @@ let g:syntastic_auto_loc_list=1
 au BufNewFile,BufRead *.yaml,*.yml    setf yaml
 "========================================================
 "surround设置
-autocmd FileType eruby let b:surround_45 = "<% \r -%>"
+autocmd FileType eruby let b:surround_45 = "<% \r %>"
 autocmd FileType eruby let b:surround_61 = "<%= \r %>"
 autocmd FileType haml let b:surround_35 = "#\r"
 autocmd FileType haml let b:surround_37 = "%\r"
