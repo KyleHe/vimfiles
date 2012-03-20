@@ -154,11 +154,6 @@ map <F1> :FufBuffer<cr>
 map tt :NERDTree<cr>
 map <F2> :NERDTree<cr>
 "========================================================
-"syntastic设置
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_jump=1
-let g:syntastic_auto_loc_list=1
-"========================================================
 "yaml设置
 au BufNewFile,BufRead *.yaml,*.yml    setf yaml
 "========================================================
