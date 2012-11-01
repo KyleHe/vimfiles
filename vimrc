@@ -144,6 +144,18 @@ Bundle 'Align'
 
 "colorscheme
 Bundle 'tomasr/molokai'
+
+"Language support
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'othree/html5.vim'
+Bundle 'pangloss/vim-javascript'
+Bundle 'itspriddle/vim-jquery'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'helino/vim-json'
+Bundle 'avakhov/vim-yaml'
+Bundle 'bbommarito/vim-slim'
+
 "========================================================
 "FuzzyFinder设置
 map tf :FufFile<cr>
