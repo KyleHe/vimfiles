@@ -153,7 +153,6 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'helino/vim-json'
 Bundle 'avakhov/vim-yaml'
-Bundle 'bbommarito/vim-slim'
 Bundle 'tpope/vim-markdown'
 
 "========================================================
