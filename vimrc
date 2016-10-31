@@ -68,7 +68,7 @@ set autoindent
 set smartindent
 "========================================================
 " 剪贴板与无名寄存器同步
-set clipboard+=unnamed
+set clipboard=unnamed
 "没有备份
 set nobackup
 "没有swap文件
