@@ -151,7 +151,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'itspriddle/vim-jquery'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'helino/vim-json'
+Bundle 'leshill/vim-json'
 Bundle 'avakhov/vim-yaml'
 Bundle 'tpope/vim-markdown'
 
